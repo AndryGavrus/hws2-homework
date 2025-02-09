@@ -13,6 +13,7 @@
     justify-content: center;
     width: 145px;
     height: 37px;
+    text-transform: capitalize;
 }
 
 .closeButton {
