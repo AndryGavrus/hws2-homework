@@ -1,36 +1,60 @@
 .button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-weight: bold;
 }
 
 .disabled {
-}
-
-.secondary {
+    background-color: #f0f0f0; /* Светло-серый для неактивной кнопки */
+    color: #a0a0a0; /* Темно-серый текст */
+    cursor: not-allowed;
 }
 
 .default {
+    background-color: #007bff; /* Синий */
+    color: white; /* Белый текст */
 }
 
 .red {
+    background-color: #ff4d4d; /* Ярко-красный */
+    color: white; /* Белый текст */
+}
+
+.secondary {
+    background-color: #6c757d; /* Серый */
+    color: white; /* Белый текст */
 }
 
 .default:hover {
+    background-color: #0056b3; /* Темно-синий при наведении */
 }
 
 .red:hover {
+    background-color: #e63946; /* Темно-красный при наведении */
 }
 
 .secondary:hover {
+    background-color: #5a6268; /* Темно-серый при наведении */
 }
 
-
 .default:active {
+    transform: scale(0.95); /* Уменьшение при нажатии */
 }
 
 .secondary:active {
+    transform: scale(0.95);
 }
 
 .red:active {
+    transform: scale(0.95);
 }
 
 .button:disabled {
+    background-color: #f0f0f0; /* Светло-серый для неактивной кнопки */
+    color: #a0a0a0; /* Темно-серый текст */
+    cursor: not-allowed;
 }
