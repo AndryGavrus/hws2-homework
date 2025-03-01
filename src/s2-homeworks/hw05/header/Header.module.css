@@ -1,8 +1,24 @@
 .burgerMenuIcon {
+    cursor: pointer; /* Change cursor to pointer */
+    width: 30px; /* Set width */
+    height: 20px; /* Set height */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack lines vertically */
+    justify-content: space-between; /* Space lines evenly */
 }
 
 .header {
+    background-color: #ffffff; /* Light background color */
+    padding: 20px; /* Padding for the header */
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center items vertically */
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 .header h1 {
+    font-size: 24px; /* Font size for header title */
+    color: #343a40; /* Dark text color */
+    margin: 0; /* Remove default margin */
+    font-weight: bold; /* Bold font weight */
 }
