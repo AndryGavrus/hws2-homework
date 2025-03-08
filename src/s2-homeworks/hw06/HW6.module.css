@@ -1,5 +1,21 @@
 .buttonsContainer {
+    display: flex; /* Используем флекс для размещения кнопок в строку */
+    justify-content: flex-start; /* Выравнивание кнопок по левому краю */
+    gap: 10px;
+    margin-top: 20px; /* Отступ сверху */
 }
 
-.editableSpanContainer {
+.button {
+    background-color: #4CAF50; /* Зеленый фон */
+    color: white; /* Белый текст */
+    padding: 10px 15px; /* Отступы внутри кнопки */
+    border: none; /* Без границы */
+    border-radius: 4px; /* Скругленные углы */
+    cursor: pointer; /* Указатель при наведении */
+    margin-right: 10px; /* Отступ между кнопками */
+    flex-shrink: 0; /* Запрет на сжатие кнопки */
+}
+
+.button:last-child {
+    margin-right: 0; /* Убираем отступ у последней кнопки */
 }

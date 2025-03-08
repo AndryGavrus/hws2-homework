@@ -1,11 +1,36 @@
 .spanBlock {
+    margin: 10px 0; /* Отступы сверху и снизу */
+    display: flex; /* Используем флекс для выравнивания содержимого */
+    align-items: center; /* Вертикальное выравнивание по центру */
 }
 
 .span {
+    color: rgb(29, 29, 233);
+    padding: 5px; /* Отступы внутри спана */
+    border-radius: 4px; /* Скругленные углы */
+    cursor: pointer; /* Указатель для интерактивного элемента */
+    transition: background-color 0.3s; /* Плавный переход цвета */
+}
+
+.span:hover {
+    background-color: #d0d0d0; /* Темнее при наведении */
 }
 
 .input {
+    width: fit-content; /* Полная ширина родительского контейнера */
+    padding: 5px; /* Отступы внутри инпута */
+    border: 1px solid #ccc; /* Светлая граница */
+    border-radius: 4px; /* Скругленные углы */
 }
 
 .pen {
+    width: 20px; /* Ширина и высота иконки */
+    height: 20px;
+    margin-left: 10px; /* Отступ слева от спана */
+    cursor: pointer; /* Указатель для интерактивного элемента */
+    transition: transform 0.3s; /* Плавный переход для эффекта */
+}
+
+.pen:hover {
+    transform: scale(1.1); /* Увеличение при наведении */
 }
