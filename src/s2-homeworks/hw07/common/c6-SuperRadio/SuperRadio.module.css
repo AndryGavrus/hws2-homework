@@ -1,15 +1,66 @@
-.radio {
+.select {
+    width: 200px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
 }
 
-.radio::before {
-}
-
-
-.radio:checked::before {
-}
-
-.label {
+.select:focus {
+    border-color: #007bff;
+    outline: none;
 }
 
 .options {
+    display: flex;
+    flex-direction: column;
+    /* Радиокнопки выстраиваются вертикально */
+    gap: 16px;
+}
+
+.radio {
+    appearance: none;
+    /* Убираем стандартный стиль радиокнопок */
+    width: 20px;
+    height: 20px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    transition: border-color 0.3s ease;
+}
+
+.radio:checked {
+    border-color: black;
+    /* Меняем цвет границы для активной кнопки */
+}
+
+.radio:checked::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    /* Размер заливки меньше общего размера радиокнопки */
+    height: 10px;
+    background-color: #007bff;
+    border-radius: 50%;
+}
+
+.radio:hover {
+    border-color: #0056b3;
+    /* Цвет границы при наведении */
+}
+
+.label {
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    margin-left: 8px;
+    display: inline-block;
 }

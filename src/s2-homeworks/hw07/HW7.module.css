@@ -1,2 +1,7 @@
 .container {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    font-family: Arial, sans-serif;
+    padding: 20px;
 }
