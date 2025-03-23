@@ -1,23 +1,65 @@
+/* General container styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Table styles */
+.users {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Header row styles */
+.thead {
+    background-color: #f0f0f0;
+    font-weight: bold;
+    text-align: left;
+}
+
+.nameCol,
+.ageCol {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Table row styles */
 .item {
+    border-bottom: 1px solid #ddd;
 }
 
 .item:last-of-type {
+    border-bottom: none;
 }
 
-.users {
+.item td {
+    padding: 12px;
 }
 
+/* Buttons container styles */
 .buttonsContainer {
+    display: flex;
+    gap: 8px;
+    margin: 16px 0;
 }
 
-.container {
-}
+/* Responsive styles */
+@media (max-width: 768px) {
 
-.thead {
-}
+    .nameCol,
+    .ageCol {
+        font-size: 14px;
+    }
 
-.nameCol {
-}
-
-.ageCol {
+    .buttonsContainer {
+        flex-direction: column;
+        gap: 4px;
+    }
 }
