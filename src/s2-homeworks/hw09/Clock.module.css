@@ -1,14 +1,47 @@
+/* Контейнер для кнопок Старт/Стоп */
 .buttonsContainer {
+    display: flex;
+    gap: 8px;
+    /* расстояние между кнопками */
+    margin-top: 16px;
+    /* отступ сверху от часов */
 }
 
+/* Блок с часами и кнопками */
 .clock {
+    padding: 24px;
+    /* внутренние отступы */
+    background-color: #FFFFFF;
+    /* белый фон */
+    border-bottom: 1px solid #E0E0E0;
+    /* разделительная линия */
 }
 
+/* Отображение текущего времени */
 .watch {
+    display: inline-block;
+    font-size: 20px;
+    color: #212529;
+    /* почти чёрный */
+    cursor: default;
 }
 
+/* Время выделяем полужирным */
 .watch strong {
+    font-weight: 600;
 }
 
+/* Дополнительная строка с датой (появляется при hover) */
 .more {
+    color: #6C757D;
+    /* серый текст */
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    /* не кликабельно, пока скрыто */
+}
+
+/* При наведении на .watch показываем дату */
+.watch:hover .more {
+    opacity: 1;
+    pointer-events: auto;
 }
