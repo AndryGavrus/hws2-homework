@@ -1,3 +1,100 @@
 .loader {
-    /*свг и/или анимация*/
+    position: relative;
+    width: 50px;
+    /* Размер основного круга */
+    height: 50px;
+    border-radius: 50%;
+}
+
+.loader div {
+    position: absolute;
+    width: 8px;
+    /* Размер маленьких кружочков */
+    height: 8px;
+    background: #3498db;
+    /* Цвет кружков */
+    border-radius: 50%;
+    animation: move 1.5s linear infinite;
+    /* Анимация движения */
+}
+
+/* Распределяем кружочки равномерно по окружности */
+.loader div:nth-child(1) {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-delay: -1.3s;
+}
+
+.loader div:nth-child(2) {
+    top: 14%;
+    left: 86%;
+    transform: translate(-50%, -50%);
+    animation-delay: -1.1s;
+}
+
+.loader div:nth-child(3) {
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    animation-delay: -0.9s;
+}
+
+.loader div:nth-child(4) {
+    top: 86%;
+    left: 86%;
+    transform: translate(-50%, -50%);
+    animation-delay: -0.7s;
+}
+
+.loader div:nth-child(5) {
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-delay: -0.5s;
+}
+
+.loader div:nth-child(6) {
+    top: 86%;
+    left: 14%;
+    transform: translate(-50%, -50%);
+    animation-delay: -0.3s;
+}
+
+.loader div:nth-child(7) {
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+    animation-delay: -0.1s;
+}
+
+.loader div:nth-child(8) {
+    top: 14%;
+    left: 14%;
+    transform: translate(-50%, -50%);
+    animation-delay: 0s;
+}
+
+/* Анимация вращения основного круга */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Анимация для пульсации кружков */
+@keyframes move {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.5);
+    }
 }
